@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: none;
+  margin: 0px;
+  box-sizing: border-box;
+  border: none;
+}
+.ant-menu-item-active::after {
+  border-bottom-color: 'none' !important;
+  border-bottom-width: 0px !important;
+}
+.hover:hover {
+  /* background-color: 'linear-gradient(90deg, #4152e0, #ba11f4)'; */
+  background: white;
+  color: black;
+  /* color: linar-graditent(30deg, '#'); */
+}
