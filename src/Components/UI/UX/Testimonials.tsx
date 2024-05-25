@@ -2,6 +2,7 @@ import { Carousel, Col, Row } from 'antd';
 import Container from './Container';
 import bg from '../../../assets/bg.avif';
 import { PrimaryBg } from '../../../Styles/Index';
+import React from 'react';
 export const Background: React.CSSProperties = {
   color: '#fff',
   backgroundImage: `url(${bg})`,
@@ -13,7 +14,7 @@ export const Background: React.CSSProperties = {
   margin: 'auto',
   justifyContent: 'center',
 };
-const Testimonials = () => (
+const Testimonials: React.FC = () => (
   <Container style={PrimaryBg}>
     <Carousel
       autoplay

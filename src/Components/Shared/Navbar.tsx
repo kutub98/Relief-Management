@@ -9,7 +9,7 @@ import { Menus } from '../../libs/Menu/Menu';
 import { Link } from 'react-router-dom';
 import Container from '../UI/UX/Container';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -22,7 +22,7 @@ const Navbar = () => {
         boxShadow: '0px, 6px	16px	0px rgba(0, 0, 0, 0.8)',
       }}
     >
-      <Container style={{}}>
+      <Container>
         <Row
           style={{
             color: 'white',
@@ -68,7 +68,7 @@ const Navbar = () => {
               />
               <MenuItems
                 name="All Releifs"
-                href="/releifs"
+                href="/relief"
                 key="7"
                 style={{
                   color: 'white',

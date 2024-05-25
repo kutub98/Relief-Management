@@ -1,12 +1,14 @@
+import React from 'react';
 import Container from '../UI/UX/Container';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <Container
       style={{
         left: '0',
         bottom: '0',
         width: '100%',
+        background: 'grey',
       }}
     >
       <h1

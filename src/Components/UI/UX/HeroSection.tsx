@@ -1,4 +1,3 @@
-import React from 'react';
 import { Carousel, Col, Row } from 'antd';
 import Container from './Container';
 
@@ -12,6 +11,7 @@ import {
   imageStyle,
   textStyle,
 } from '../../../Styles/Index';
+import React from 'react';
 
 const HeroSection: React.FC = () => (
   <Container>

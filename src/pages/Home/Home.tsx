@@ -1,4 +1,3 @@
-import React from 'react';
 import HeroSection from '../../Components/UI/UX/HeroSection';
 import AllReleifGoods from '../AllReleifGoods/AllReleifGoods';
 import About from '../About/About';

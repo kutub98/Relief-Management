@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
 type TContainerProps = {
   children: ReactNode;
@@ -11,7 +11,7 @@ const Container = ({ children, style }: TContainerProps) => {
       style={{
         margin: 'auto',
         width: '100%',
-        maxWidth: '1280px',
+        maxWidth: '1320px',
         padding: '10px 40px',
         ...style,
       }}
