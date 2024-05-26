@@ -33,6 +33,9 @@ export const PrimaryBg: React.CSSProperties = {
   background: 'linear-gradient(90deg, rgba(65, 82, 224), rgba(186, 17, 244))',
   boxShadow: '0px, 6px, 16px, 0px rgba(0, 0, 0, 0.8)',
 };
+export const textColor = {
+  background: 'linear-gradient(90deg, rgba(65, 82, 224), rgba(186, 17, 244))',
+};
 
 // hero section end
 

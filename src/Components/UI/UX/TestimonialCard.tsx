@@ -2,7 +2,6 @@ import { FaFacebook } from 'react-icons/fa6';
 import { LiaLinkedinIn } from 'react-icons/lia';
 import { SlCallIn } from 'react-icons/sl';
 import { MdEmail } from 'react-icons/md';
-import img from '../../../assets/1.png';
 import { ClipPath, ClipPath2, PrimaryBg } from '../../../Styles/Index';
 
 const TestimonialCard = () => {
@@ -17,7 +16,7 @@ const TestimonialCard = () => {
         justifyContent: 'center',
         display: 'flex',
         margin: '0 auto',
-        color: 'black',
+        color: 'GrayText',
         ...PrimaryBg,
       }}
     >
@@ -29,7 +28,7 @@ const TestimonialCard = () => {
           left: '0',
           background: 'white',
           textAlign: 'center',
-          height: '100px',
+
           padding: '20px',
           width: '100%',
           ...ClipPath,
@@ -49,23 +48,27 @@ const TestimonialCard = () => {
             <LiaLinkedinIn />
           </div>
         </div>
-        <h1>Happy Client</h1>
+        <h1 style={{ margin: '20px' }}>Happy Client</h1>
       </div>
 
       <div
         style={{
           position: 'absolute',
-          top: '25%',
-          background: 'white',
+          top: '28%',
+          // background: 'white',
           height: '100px',
           width: '100px',
           margin: '0 auto',
           borderRadius: '50%',
-          padding: '8px',
-          border: '1px solid yellow',
+          padding: '2px',
+          border: '2px solid white',
         }}
       >
-        <img src={img} style={{ height: '100%', width: '100%' }} alt="" />
+        <img
+          src="https://media.istockphoto.com/id/1476170969/photo/portrait-of-young-man-ready-for-job-business-concept.webp?b=1&s=170667a&w=0&k=20&c=FycdXoKn5StpYCKJ7PdkyJo9G5wfNgmSLBWk3dI35Zw="
+          style={{ height: '100%', width: '100%', borderRadius: '50%' }}
+          alt=""
+        />
       </div>
 
       {/* bottom  */}
@@ -94,8 +97,8 @@ const TestimonialCard = () => {
               height: '10px',
               width: '10px',
               borderRadius: '50%',
-              background: 'yellow',
               gap: '8px',
+              ...PrimaryBg,
             }}
           ></span>
           <span
@@ -103,8 +106,8 @@ const TestimonialCard = () => {
               height: '10px',
               width: '10px',
               borderRadius: '50%',
-              background: 'yellow',
               gap: '8px',
+              ...PrimaryBg,
             }}
           ></span>
           <span
@@ -112,8 +115,8 @@ const TestimonialCard = () => {
               height: '10px',
               width: '10px',
               borderRadius: '50%',
-              background: 'yellow',
               gap: '8px',
+              ...PrimaryBg,
             }}
           ></span>
           <span
@@ -121,8 +124,8 @@ const TestimonialCard = () => {
               height: '10px',
               width: '10px',
               borderRadius: '50%',
-              background: 'yellow',
               gap: '8px',
+              ...PrimaryBg,
             }}
           ></span>
         </div>
