@@ -48,7 +48,7 @@ const TestimonialCard = () => {
             <LiaLinkedinIn />
           </div>
         </div>
-        <h1 style={{ margin: '20px' }}>Happy Client</h1>
+        <h2 style={{ margin: '20px' }}>Happy Client</h2>
       </div>
 
       <div
