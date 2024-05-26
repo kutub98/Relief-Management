@@ -53,11 +53,11 @@ const Router = () => (
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
         <Route path="home" element={<Home />} />
-        <Route path="/relief" element={<AllReleifGoods />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="relief" element={<AllReleifGoods />} />
+        <Route path="about" element={<About />} />
+        <Route path="login" element={<Login />} />
       </Route>
-      <Route path="/admin" element={<AdminLayout />}>
+      <Route path="admin" element={<AdminLayout />}>
         <Route index element={<AllReleifGoods />} />
       </Route>
     </Routes>

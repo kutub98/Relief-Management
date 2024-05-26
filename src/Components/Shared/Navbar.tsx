@@ -20,6 +20,7 @@ const Navbar: React.FC = () => {
         zIndex: '999',
         background: 'linear-gradient(90deg, #4152e0, #ba11f4)',
         boxShadow: '0px, 6px	16px	0px rgba(0, 0, 0, 0.8)',
+        backdropFilter: 'bluer(20px}',
       }}
     >
       <Container>
