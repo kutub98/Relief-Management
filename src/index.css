@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Cambo&display=swap');
+
 * {
   padding: none;
   margin: 0px;
   box-sizing: border-box;
   border: none;
+  font-family: 'Cambo', serif;
 }
 .ant-menu-item-active::after {
   border-bottom-color: 'none' !important;

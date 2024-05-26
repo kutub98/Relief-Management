@@ -2,9 +2,8 @@ import { Col, Row } from 'antd';
 import Container from '../../Components/UI/UX/Container';
 import ReliefCard from '../../Components/UI/UX/ReliefCard';
 import PrimaryButton from '../../Components/UI/UX/PrimaryButton';
-import React from 'react';
 
-const AllReleifGoods: React.FC = () => {
+const AllReleifGoods = () => {
   return (
     <Container style={{ textAlign: 'center' }}>
       <h1 style={{ margin: '50px 0' }}>All Relief Goods</h1>
