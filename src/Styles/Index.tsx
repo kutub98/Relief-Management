@@ -49,3 +49,4 @@ export const ClipPath2: React.CSSProperties = {
   clipPath:
     'polygon(10.2% 0%, 89.8% 0%, 100.1% 10%, 100.1% 100.3%, 0% 100.3%, 0% 10%)',
 };
+

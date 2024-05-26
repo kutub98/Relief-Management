@@ -1,24 +1,5 @@
-// import { Menu } from 'antd';
-// import { MenuItems } from './MenuItems';
-
-// type TStyle = {
-//   style: React.CSSProperties;
-// };
-
-// export const menu = ({ style }: TStyle) => {
-//   return (
-//     <Menu style={style}>
-//       <MenuItems key="1" href="/home" style={{ color: 'white', border:"none" }} name="" />
-//     </Menu>
-//   );
-// };
-
 import { Menu } from 'antd';
 import { MenuItems } from './MenuItems';
-
-// type TStyle = {
-//   style?: React.CSSProperties;
-// };
 
 export const Menus = () => {
   return (
@@ -37,7 +18,7 @@ export const Menus = () => {
       />
       <MenuItems
         name="All Releifs"
-        href="/releifs"
+        href="/relief"
         key="2"
         style={{ color: 'white', border: 'none' }}
       />

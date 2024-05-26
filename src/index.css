@@ -11,6 +11,24 @@
   border: none;
   font-family: 'Cambo', serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+a,
+li,
+ul,
+ol,
+input,
+button,
+span,
+p {
+  margin: none !important;
+  padding: none !important;
+  box-sizing: border-box !important;
+}
 .ant-menu-item-active::after {
   border-bottom-color: 'none' !important;
   border-bottom-width: 0px !important;
@@ -46,4 +64,12 @@
 .cardhover:hover {
   box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px,
     rgba(255, 255, 255, 0.23) 0px 3px 6px;
+}
+
+.boc {
+  background-color: bisque;
+}
+
+.aboutCard {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
