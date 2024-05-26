@@ -35,3 +35,14 @@ export const PrimaryBg: React.CSSProperties = {
 };
 
 // hero section end
+
+// testimoialCard
+
+export const ClipPath: React.CSSProperties = {
+  clipPath:
+    'polygon(0% 0%, 100.1% 0%, 100.1% 89%, 89.4% 100%, 10.6% 100.3%, 0% 89%)',
+};
+export const ClipPath2: React.CSSProperties = {
+  clipPath:
+    'polygon(10.2% 0%, 89.8% 0%, 100.1% 10%, 100.1% 100.3%, 0% 100.3%, 0% 10%)',
+};

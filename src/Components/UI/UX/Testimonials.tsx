@@ -1,54 +1,63 @@
-import { Carousel, Col, Row } from 'antd';
+import React, { useEffect, useState } from 'react';
+import { Carousel } from 'antd';
 import Container from './Container';
-import bg from '../../../assets/bg.avif';
+import TestimonialCard from './TestimonialCard';
 import { PrimaryBg } from '../../../Styles/Index';
-import React from 'react';
-export const Background: React.CSSProperties = {
+const contentStyle: React.CSSProperties = {
+  height: 'auto',
   color: '#fff',
-  backgroundImage: `url(${bg})`,
-  backgroundPosition: 'center', // Corrected spelling of 'center'
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: 'cover',
-  position: 'relative',
-
-  margin: 'auto',
-  justifyContent: 'center',
+  textAlign: 'center',
 };
-const Testimonials: React.FC = () => (
-  <Container style={PrimaryBg}>
-    <Carousel
-      autoplay
-      autoplaySpeed={2000}
-      style={{
-        width: '600px',
-        margin: 'auto auto',
-        background: 'white',
-      }}
-    >
-      <div>
-        <Row gutter={8}>
-          <Col>Hello1</Col>
-        </Row>
-      </div>
-      <div>
-        <Row gutter={8}>
-          <Col>Hello1</Col>
-        </Row>
-      </div>
-      <div>
-        <Row gutter={8}>
-          <Col>
-            <div>
-              <img
-                src="https://www.shutterstock.com/image-photo/studio-close-portrait-happy-smiling-260nw-2153541715.jpg"
-                alt=""
-              />
-            </div>
-          </Col>
-        </Row>
-      </div>
-    </Carousel>
-  </Container>
-);
+
+const items = [
+  { content: <TestimonialCard /> },
+  { content: <TestimonialCard /> },
+  { content: <TestimonialCard /> },
+  { content: <TestimonialCard /> },
+  { content: <TestimonialCard /> },
+  { content: <TestimonialCard /> },
+];
+
+const Testimonials: React.FC = () => {
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  const updateSlidesToShow = () => {
+    const width = window.innerWidth;
+    if (width < 600) {
+      setSlidesToShow(1);
+    } else if (width < 1024) {
+      setSlidesToShow(2);
+    } else {
+      setSlidesToShow(3);
+    }
+  };
+
+  useEffect(() => {
+    updateSlidesToShow();
+    window.addEventListener('resize', updateSlidesToShow);
+    return () => window.removeEventListener('resize', updateSlidesToShow);
+  }, []);
+
+  const extendedItems = [...items, ...items.slice(0, slidesToShow - 1)];
+
+  return (
+    <Container>
+      <Carousel
+        dots={true}
+        infinite
+        autoplay
+        slidesToShow={slidesToShow}
+        slidesToScroll={1}
+        style={{ ...PrimaryBg, padding: '30px', borderRadius: '6px' }}
+      >
+        {extendedItems.map((item, index) => (
+          <div key={index}>
+            <div style={contentStyle}>{item.content}</div>
+          </div>
+        ))}
+      </Carousel>
+    </Container>
+  );
+};
 
 export default Testimonials;
