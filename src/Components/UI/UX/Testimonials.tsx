@@ -48,7 +48,7 @@ const Testimonials: React.FC = () => {
         autoplay
         slidesToShow={slidesToShow}
         slidesToScroll={1}
-        style={{ ...PrimaryBg, padding: '30px', borderRadius: '6px' }}
+        style={{ ...PrimaryBg, padding: '20px', borderRadius: '6px' }}
       >
         {extendedItems.map((item, index) => (
           <div key={index}>
