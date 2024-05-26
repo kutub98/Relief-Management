@@ -20,7 +20,6 @@ const Navbar: React.FC = () => {
         zIndex: '999',
         background: 'linear-gradient(90deg, #4152e0, #ba11f4)',
         boxShadow: '0px, 6px	16px	0px rgba(0, 0, 0, 0.8)',
-        backdropFilter: 'bluer(20px}',
       }}
     >
       <Container>
@@ -69,7 +68,7 @@ const Navbar: React.FC = () => {
               />
               <MenuItems
                 name="All Releifs"
-                href="/relief"
+                href="relief"
                 key="7"
                 style={{
                   color: 'white',
@@ -79,7 +78,7 @@ const Navbar: React.FC = () => {
               />
               <MenuItems
                 name="What we do"
-                href="/about"
+                href="about"
                 key="8"
                 style={{
                   color: 'white',
@@ -89,7 +88,7 @@ const Navbar: React.FC = () => {
               />
               <MenuItems
                 name="Login"
-                href="/login"
+                href="login"
                 key="9"
                 style={{
                   color: 'white',
@@ -99,7 +98,7 @@ const Navbar: React.FC = () => {
               />
               <MenuItems
                 name="Logout"
-                href="/logout"
+                href="logout"
                 key="10"
                 style={{
                   color: 'white',
