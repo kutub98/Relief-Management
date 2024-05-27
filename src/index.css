@@ -11,20 +11,14 @@
   border: none;
   font-family: 'Cambo', serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h5,
+
 a,
 li,
 ul,
 ol,
 input,
 button,
-span,
-p {
+span {
   margin: none !important;
   padding: none !important;
   box-sizing: border-box !important;
@@ -72,4 +66,9 @@ p {
 
 .aboutCard {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+ul p a {
+  color: rgb(84, 81, 81);
+  font-size: 16px;
 }

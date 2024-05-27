@@ -1,4 +1,5 @@
 import backgroundImage from '../assets/image.jpg';
+import footerImg from '../assets/footer.jpg';
 
 // hero section start
 export const contentStyle: React.CSSProperties = {
@@ -10,6 +11,16 @@ export const contentStyle: React.CSSProperties = {
   width: '100%',
   height: '500px',
   position: 'relative',
+};
+export const FooterBg: React.CSSProperties = {
+  backgroundImage: `url(${footerImg})`,
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  width: '100%',
+
+  position: 'relative',
+  padding: '40px',
 };
 
 export const textStyle: React.CSSProperties = {
@@ -49,4 +60,3 @@ export const ClipPath2: React.CSSProperties = {
   clipPath:
     'polygon(10.2% 0%, 89.8% 0%, 100.1% 10%, 100.1% 100.3%, 0% 100.3%, 0% 10%)',
 };
-

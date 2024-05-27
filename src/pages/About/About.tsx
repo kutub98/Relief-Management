@@ -55,6 +55,7 @@ const About = () => {
               voluptatibus cumque rerum, vel fugiat! Rerum quod aliquam,
               praesentium cupiditate quibusdam voluptas voluptate molestiae?
             </h4> */}
+
             <Row gutter={[8, 8]} style={{ margin: '10px 0px' }}>
               <Col
                 className=""
@@ -139,6 +140,28 @@ const About = () => {
         >
           {/* </Card> */}
           <Card hoverable className="aboutCard">
+            <Col
+              className=""
+              span={0}
+              xs={24}
+              sm={24}
+              md={24}
+              lg={24}
+              xl={24}
+              xxl={24}
+            >
+              <img
+                src="https://i0.wp.com/dor2dor.co.uk/wp-content/uploads/2022/11/What-Are-The-Best-Ways-To-Distribute-Leaflets.jpg?fit=1200%2C801&ssl=1"
+                alt=""
+                style={{
+                  width: '100%',
+                  height: '200px',
+                  borderRadius: '8px',
+                  boxShadow:
+                    'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px',
+                }}
+              />
+            </Col>
             <Row gutter={[8, 8]} style={{ margin: '10px 0px' }}>
               <Col
                 className=""
