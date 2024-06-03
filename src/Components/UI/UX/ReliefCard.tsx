@@ -1,19 +1,45 @@
 import { Card } from 'antd';
 import React from 'react';
-const ReliefCard: React.FC = () => (
+
+interface ReliefCardProps {
+  img: string;
+  country: string;
+}
+
+const ReliefCard: React.FC<ReliefCardProps> = ({ img, country }) => (
   <Card
     hoverable
-    cover={
-      <img
-        style={{ height: '260px' }}
-        alt="example"
-        src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg"
-      />
-    }
+    style={{ height: '380px' }}
+    cover={<img style={{ height: '160px' }} alt="example" src={img} />}
   >
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+      }}
+    >
+      <h1>Card from </h1>
+      <h3>{country}</h3>
+    </div>
     <div>
-      <h1>Card one</h1>
-      <p>Card one Description</p>
+      <p style={{ textAlign: 'left', fontSize: '16px' }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+        totam!
+      </p>
+      <button
+        className="secondaryColor"
+        style={{
+          width: '100%',
+          padding: '10px 20px',
+          borderRadius: '6px',
+          fontSize: '20px',
+          color: 'white',
+          fontWeight: 'bold',
+        }}
+      >
+        More Details
+      </button>
     </div>
   </Card>
 );

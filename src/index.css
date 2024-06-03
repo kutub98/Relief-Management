@@ -32,6 +32,13 @@ span {
   border-bottom-color: 'none' !important;
   border-bottom-width: 0px !important;
 }
+
+.primaryColor {
+  background: linear-gradient(90deg, rgba(65, 82, 224), rgba(186, 17, 244));
+}
+.secondaryColor {
+  background: linear-gradient(90deg, rgb(169, 3, 169), rgba(186, 17, 244));
+}
 .hover:hover {
   /* background-color: 'linear-gradient(90deg, #4152e0, #ba11f4)'; */
   background: white;
@@ -99,6 +106,25 @@ h1 {
 }
 .white {
   background-color: white;
+}
+
+.releifSticky {
+  margin: 50px 0;
+  text-align: left;
+  position: sticky;
+  top: 100px;
+  color: blueviolet;
+  width: 300px;
+  z-index: 10;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.releifSticky h1 {
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 @media screen and (min-width: 200px) and (max-width: 780px) {
   .style {
