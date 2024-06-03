@@ -1,7 +1,7 @@
 import { Card, Col, Row } from 'antd';
 import Container from '../../Components/UI/UX/Container';
 import { PrimaryBg } from '../../Styles/Index';
-
+import CountUp from 'react-countup';
 const About = () => {
   return (
     <Container style={{ margin: '40px auto' }}>
@@ -69,7 +69,7 @@ const About = () => {
               >
                 <Card>
                   <h1 style={{ fontWeight: 'bold', textAlign: 'center' }}>
-                    20
+                    <CountUp end={15} enableScrollSpy={true} duration={1.5} />
                   </h1>
                   <h4 style={{ textAlign: 'center' }}>Total Event</h4>
                 </Card>
@@ -86,7 +86,7 @@ const About = () => {
               >
                 <Card>
                   <h1 style={{ fontWeight: 'bold', textAlign: 'center' }}>
-                    15
+                    <CountUp end={15} enableScrollSpy={true} duration={1.5} />
                   </h1>
                   <h4 style={{ textAlign: 'center' }}>Total Sector</h4>
                 </Card>
@@ -103,7 +103,8 @@ const About = () => {
               >
                 <Card>
                   <h1 style={{ fontWeight: 'bold', textAlign: 'center' }}>
-                    15 lacks
+                    <CountUp end={15} enableScrollSpy={true} duration={1.5} />
+                    <span style={{ marginLeft: '10px' }}>Lacks</span>
                   </h1>
                   <h4 style={{ textAlign: 'center' }}>Total Collection</h4>
                 </Card>
@@ -120,7 +121,8 @@ const About = () => {
               >
                 <Card>
                   <h1 style={{ fontWeight: 'bold', textAlign: 'center' }}>
-                    15 lacks
+                    <CountUp end={15} enableScrollSpy={true} duration={1.5} />
+                    <span style={{ marginLeft: '10px' }}>Lacks</span>
                   </h1>
                   <h4 style={{ textAlign: 'center' }}>Total Distributed</h4>
                 </Card>

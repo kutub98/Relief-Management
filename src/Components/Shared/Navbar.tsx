@@ -106,6 +106,19 @@ const Navbar: React.FC = () => {
                   fontWeight: 'bold',
                 }}
               />
+              <MenuItems
+                name="Donate"
+                href="donate"
+                key="10"
+                style={{
+                  padding: '12px 20px ',
+                  borderRadius: '6px',
+                  background: 'white',
+                  color: 'red',
+                  fontSize: '16px',
+                  fontWeight: 'bold',
+                }}
+              />
             </Menu>
           </Col>
           {visible ? (

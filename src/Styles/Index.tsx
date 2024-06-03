@@ -1,4 +1,4 @@
-import backgroundImage from '../assets/image.jpg';
+import backgroundImage from '../assets/image1.jpg';
 import footerImg from '../assets/footer.jpg';
 
 // hero section start
@@ -9,7 +9,7 @@ export const contentStyle: React.CSSProperties = {
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   width: '100%',
-  height: '500px',
+  height: 'auto',
   position: 'relative',
 };
 export const FooterBg: React.CSSProperties = {
@@ -24,9 +24,13 @@ export const FooterBg: React.CSSProperties = {
 };
 
 export const textStyle: React.CSSProperties = {
+  width: '100%',
   display: 'flex',
   alignItems: 'center',
-  margin: ' auto',
+  margin: '0px auto',
+  background:
+    'linear-gradient(90deg, rgba(65, 82, 224, 0.6), rgba(186, 17, 244, 0.6))',
+  boxShadow: '0px, 6px, 16px, 0px rgba(0, 0, 0, 0.8)',
 };
 
 export const imageStyle: React.CSSProperties = {
@@ -34,11 +38,15 @@ export const imageStyle: React.CSSProperties = {
   height: '400px',
 };
 export const BackgroundColor: React.CSSProperties = {
-  background:
-    'linear-gradient(90deg, rgba(65, 82, 224, 0.4), rgba(186, 17, 244, 0.5))',
+  // background:
+  //   'linear-gradient(90deg, rgba(65, 82, 224, 0.4), rgba(186, 17, 244, 0.5))',
   boxShadow: '0px, 6px, 16px, 0px rgba(0, 0, 0, 0.8)',
   width: '100%',
+  margin: '0 auto',
   height: '500px',
+  display: 'flex',
+  justifyContent: 'center',
+  textAlign: 'center',
 };
 export const PrimaryBg: React.CSSProperties = {
   background: 'linear-gradient(90deg, rgba(65, 82, 224), rgba(186, 17, 244))',
