@@ -108,6 +108,10 @@ h1 {
   background-color: white;
 }
 
+.buttonGroup {
+  /* justify-content: center; */
+}
+
 .releifSticky {
   margin: 50px 0;
   text-align: left;
@@ -129,7 +133,7 @@ h1 {
 
 .cardSticky {
   position: sticky;
-  top: 110px; /* Adjust this value to ensure the cards start below the sticky header */
+  top: 110px;
 }
 
 /* about section  */
@@ -148,6 +152,7 @@ h1 {
     font-weight: bold;
   }
 }
+
 @media screen and (min-width: 200px) and (max-width: 991px) {
   .styleImg {
     display: none;
@@ -162,5 +167,19 @@ h1 {
   .style {
     text-align: center;
     padding: 10px;
+  }
+  .buttonGroup {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1050px) and (max-width: 1200px) {
+  .carouselImg {
+    height: 300px;
+    width: 300px;
+    margin-left: 0px;
+  }
+  .carouselImg img {
+    height: 200px;
+    width: 200px;
   }
 }

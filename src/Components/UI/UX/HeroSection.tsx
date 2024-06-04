@@ -18,77 +18,133 @@ const strings = [
 ];
 const HeroSection: React.FC = () => (
   <Container>
-    <Carousel autoplay autoplaySpeed={5000} style={contentStyle}>
-      <div>
-        <Row style={BackgroundColor}>
-          <Col style={textStyle}>
-            <Col sm={24} lg={12} md={24} xxl={12} className="style">
-              <motion.div
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.5,
-                  type: 'spring',
-                  stiffness: 120,
+    <div style={contentStyle}>
+      <Row style={BackgroundColor}>
+        <Col style={textStyle}>
+          <Col sm={24} lg={12} md={24} xxl={12} className="style">
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.5,
+                type: 'spring',
+                stiffness: 120,
+              }}
+            >
+              <span className="white">
+                <motion.h2
+                  initial={{ x: -100, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.9,
+                    type: 'spring',
+                    stiffness: 120,
+                  }}
+                  style={{ fontSize: '35px' }}
+                >
+                  Features
+                </motion.h2>
+              </span>
+              <div
+                style={{
+                  background: 'white',
+                  width: '98%',
+                  padding: '8px',
+                  borderRadius: '6px',
                 }}
               >
-                <span className="white">
-                  <motion.h2
-                    initial={{ x: -100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{
-                      delay: 0.9,
-                      type: 'spring',
-                      stiffness: 120,
-                    }}
-                    style={{ fontSize: '35px' }}
-                  >
-                    Features
-                  </motion.h2>
-                </span>
-                <div
+                <ReactTyped
+                  strings={strings}
+                  className="textStyle"
                   style={{
-                    background: 'white',
-                    width: '98%',
+                    // background: 'white',
                     padding: '8px',
                     borderRadius: '6px',
                   }}
-                >
-                  <ReactTyped
-                    strings={strings}
-                    className="textStyle"
-                    style={{
-                      // background: 'white',
-                      padding: '8px',
-                      borderRadius: '6px',
-                    }}
-                    typeSpeed={90}
-                    backSpeed={10}
-                    loop
-                  />
-                </div>
+                  typeSpeed={90}
+                  backSpeed={10}
+                  loop
+                />
+              </div>
 
-                <p style={{ margin: '10px 0', fontSize: '20px' }}>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Expedita eum nemo ducimus, earum nulla totam dolorum provident
-                  nihil est quisquam ut qui delectus commodi, quod quam vel,
-                  laboriosam reprehenderit omnis.
-                </p>
-                <div>
-                  <PrimaryButton
-                    style={{ margin: '5px', background: 'rgba(0,0,0, 0.5)' }}
-                  >
-                    Donate
-                  </PrimaryButton>
+              <p style={{ margin: '10px 0', fontSize: '20px' }}>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Expedita eum nemo ducimus, earum nulla totam dolorum provident
+                nihil est quisquam ut qui delectus commodi, quod quam vel,
+                laboriosam reprehenderit omnis.
+              </p>
+              <div
+                className="buttonGroup"
+                style={{
+                  display: 'flex',
+                }}
+              >
+                <PrimaryButton
+                  style={{ margin: '5px', background: 'rgba(0,0,0, 0.5)' }}
+                >
+                  Donate
+                </PrimaryButton>
+                <motion.div
+                  initial={{ scale: 0.9 }}
+                  whileHover={{
+                    scale: 1,
+                    boxShadow: '0px 0px 8px rgba(255, 255, 255)',
+                    textShadow: '0px 0px 8px rgba(255, 255, 255)',
+                  }}
+                >
                   <Link to={'about'}>
                     <PrimaryButton style={{ margin: '5px', background: 'red' }}>
                       Learn More
                     </PrimaryButton>
                   </Link>
-                </div>
+                </motion.div>
+              </div>
+            </motion.div>
+          </Col>
+
+          <Col sm={24} lg={12} md={12} xxl={12} className="styleImg">
+            <Carousel
+              autoplay
+              autoplaySpeed={5000}
+              className="carousel"
+              style={{
+                display: 'flex',
+                justifyContent: 'end',
+                marginLeft: '140px',
+              }}
+            >
+              <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  type: 'spring',
+                  stiffness: 50,
+                }}
+                className="carouselImg"
+                style={{
+                  display: 'flex',
+                  padding: '40px',
+                  margin: 'auto',
+                  justifyContent: 'end',
+                  textAlign: 'end',
+                }}
+              >
+                <img
+                  className="carouselImg"
+                  style={{
+                    height: '400px',
+                    width: '400px',
+                    borderRadius: '50%',
+                    padding: '8px',
+                    boxShadow: 'rgb(255,255,255, 0.7) 0px 20px 30px -10px',
+                    textAlign: 'end',
+                    border: '1px solid white',
+                  }}
+                  src={img2}
+                  alt=""
+                />
               </motion.div>
-            </Col>
-            <Col sm={24} lg={12} md={12} xxl={12} className="styleImg">
               <motion.div
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
@@ -119,11 +175,11 @@ const HeroSection: React.FC = () => (
                   alt=""
                 />
               </motion.div>
-            </Col>
+            </Carousel>
           </Col>
-        </Row>
-      </div>
-    </Carousel>
+        </Col>
+      </Row>
+    </div>
   </Container>
 );
 

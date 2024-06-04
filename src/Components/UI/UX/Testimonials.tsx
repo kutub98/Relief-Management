@@ -43,6 +43,7 @@ const Testimonials: React.FC = () => {
   return (
     <Container>
       <Carousel
+        className=""
         dots={true}
         infinite
         autoplay
@@ -61,4 +62,3 @@ const Testimonials: React.FC = () => {
 };
 
 export default Testimonials;
-

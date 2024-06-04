@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
               <MenuItems
                 name="Home"
                 href="/"
-                key="6"
+                key="7"
                 style={{
                   color: 'white',
                   fontSize: '16px',
@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
               <MenuItems
                 name="All Releifs"
                 href="relief"
-                key="7"
+                key="8"
                 style={{
                   color: 'white',
                   fontSize: '16px',
@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
               <MenuItems
                 name="What we do"
                 href="about"
-                key="8"
+                key="9"
                 style={{
                   color: 'white',
                   fontSize: '16px',
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
               <MenuItems
                 name="Login"
                 href="login"
-                key="9"
+                key="10"
                 style={{
                   color: 'white',
                   fontSize: '16px',
@@ -102,7 +102,7 @@ const Navbar: React.FC = () => {
               <MenuItems
                 name="Logout"
                 href="logout"
-                key="10"
+                key="11"
                 style={{
                   color: 'white',
                   fontSize: '16px',
@@ -112,7 +112,7 @@ const Navbar: React.FC = () => {
               <MenuItems
                 name="Donate"
                 href="donate"
-                key="10"
+                key="12"
                 style={{
                   padding: '12px 20px ',
                   borderRadius: '6px',
@@ -137,6 +137,8 @@ const Navbar: React.FC = () => {
             >
               <FaXmark
                 style={{
+                  height: '40px',
+                  width: '40px',
                   color: 'white',
                   border: 'none',
                   fontSize: '16px',
@@ -157,6 +159,8 @@ const Navbar: React.FC = () => {
             >
               <FiMenu
                 style={{
+                  height: '40px',
+                  width: '40px',
                   color: 'white',
                   border: 'none',
                   fontSize: '16px',
