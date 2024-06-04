@@ -58,7 +58,7 @@ const TestimonialCard = () => {
           // background: 'white',
           height: '100px',
           width: '100px',
-          margin: '0 auto',
+          margin: '6px auto',
           borderRadius: '50%',
           padding: '2px',
           border: '2px solid white',
@@ -82,14 +82,14 @@ const TestimonialCard = () => {
           ...ClipPath2,
         }}
       >
-        <h1 style={{ margin: '8px' }}>Johon Doe</h1>
-        <h6 style={{ margin: '8px' }}>Lorem ipsum dolor sit amet.</h6>
+        <h1 style={{ margin: '4px' }}>Johon Doe</h1>
+        <h6 style={{ margin: '4px' }}>Lorem ipsum dolor sit amet.</h6>
         <div
           style={{
             display: 'flex',
             justifyContent: 'center',
             gap: '8px',
-            margin: '8px',
+            margin: '4px',
           }}
         >
           <span

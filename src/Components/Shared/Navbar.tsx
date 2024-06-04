@@ -8,12 +8,15 @@ import { FaXmark } from 'react-icons/fa6';
 import { Menus } from '../../libs/Menu/Menu';
 import { Link } from 'react-router-dom';
 import Container from '../UI/UX/Container';
-
+import { motion } from 'framer-motion';
 const Navbar: React.FC = () => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <nav
+    <motion.nav
+      initial={{ y: -250 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.4 }}
       style={{
         position: 'sticky',
         top: '0',
@@ -172,7 +175,7 @@ const Navbar: React.FC = () => {
           </Col>
         )}
       </Col>
-    </nav>
+    </motion.nav>
   );
 };
 

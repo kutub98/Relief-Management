@@ -1,4 +1,3 @@
-import React from 'react';
 import { Col, Row } from 'antd';
 import Container from '../../Components/UI/UX/Container';
 import ReliefCard from '../../Components/UI/UX/ReliefCard';
@@ -37,7 +36,9 @@ const AllReliefGoods = () => {
             xl={8}
             xxl={8}
           >
-            <ReliefCard {...item} />
+            <div className="cardSticky">
+              <ReliefCard {...item} />
+            </div>
           </Col>
         ))}
       </Row>

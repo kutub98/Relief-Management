@@ -9,7 +9,8 @@ import {
   textStyle,
 } from '../../../Styles/Index';
 import React from 'react';
-
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 const strings = [
   '  Giving help to those Who need it',
   '  Taking help to those Who need it ',
@@ -21,50 +22,81 @@ const HeroSection: React.FC = () => (
       <div>
         <Row style={BackgroundColor}>
           <Col style={textStyle}>
-            <Col sm={24} lg={12} md={12} xxl={12} className="style">
-              <span className="white">
-                <h2 style={{ fontSize: '35px' }}>Features</h2>
-              </span>
-              <div
-                style={{
-                  background: 'white',
-                  padding: '8px',
-                  borderRadius: '6px',
+            <Col sm={24} lg={12} md={24} xxl={12} className="style">
+              <motion.div
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  type: 'spring',
+                  stiffness: 120,
                 }}
               >
-                <ReactTyped
-                  strings={strings}
-                  className="textStyle"
+                <span className="white">
+                  <motion.h2
+                    initial={{ x: -100, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{
+                      delay: 0.9,
+                      type: 'spring',
+                      stiffness: 120,
+                    }}
+                    style={{ fontSize: '35px' }}
+                  >
+                    Features
+                  </motion.h2>
+                </span>
+                <div
                   style={{
-                    // background: 'white',
+                    background: 'white',
+                    width: '98%',
                     padding: '8px',
                     borderRadius: '6px',
                   }}
-                  typeSpeed={90}
-                  backSpeed={10}
-                  loop
-                />
-              </div>
-
-              <p style={{ margin: '10px 0', fontSize: '20px' }}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Expedita eum nemo ducimus, earum nulla totam dolorum provident
-                nihil est quisquam ut qui delectus commodi, quod quam vel,
-                laboriosam reprehenderit omnis.
-              </p>
-              <div>
-                <PrimaryButton
-                  style={{ margin: '5px', background: 'rgba(0,0,0, 0.5)' }}
                 >
-                  Donate
-                </PrimaryButton>
-                <PrimaryButton style={{ margin: '5px', background: 'red' }}>
-                  Learn More
-                </PrimaryButton>
-              </div>
+                  <ReactTyped
+                    strings={strings}
+                    className="textStyle"
+                    style={{
+                      // background: 'white',
+                      padding: '8px',
+                      borderRadius: '6px',
+                    }}
+                    typeSpeed={90}
+                    backSpeed={10}
+                    loop
+                  />
+                </div>
+
+                <p style={{ margin: '10px 0', fontSize: '20px' }}>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Expedita eum nemo ducimus, earum nulla totam dolorum provident
+                  nihil est quisquam ut qui delectus commodi, quod quam vel,
+                  laboriosam reprehenderit omnis.
+                </p>
+                <div>
+                  <PrimaryButton
+                    style={{ margin: '5px', background: 'rgba(0,0,0, 0.5)' }}
+                  >
+                    Donate
+                  </PrimaryButton>
+                  <Link to={'about'}>
+                    <PrimaryButton style={{ margin: '5px', background: 'red' }}>
+                      Learn More
+                    </PrimaryButton>
+                  </Link>
+                </div>
+              </motion.div>
             </Col>
             <Col sm={24} lg={12} md={12} xxl={12} className="styleImg">
-              <div
+              <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  type: 'spring',
+                  stiffness: 50,
+                }}
                 style={{
                   display: 'flex',
                   padding: '40px',
@@ -86,7 +118,7 @@ const HeroSection: React.FC = () => (
                   src={img2}
                   alt=""
                 />
-              </div>
+              </motion.div>
             </Col>
           </Col>
         </Row>
