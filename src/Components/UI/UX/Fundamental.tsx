@@ -1,6 +1,5 @@
 import Container from './Container';
 import { Col, Row } from 'antd';
-
 import { FaDollarSign } from 'react-icons/fa6';
 import { BsHandIndex } from 'react-icons/bs';
 import { FaHandPaper } from 'react-icons/fa';
